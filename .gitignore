@@ -1,0 +1,16 @@
+build/
+build-msvc/
+build-ninja/
+build-*/
+run-matrix-results/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.zip
+compile_commands.json
+*.log
+*.obj
+
+# Runtime-generated solution files are kept separate from source instances.
+data/solutions/*.txt

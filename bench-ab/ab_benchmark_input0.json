@@ -1,0 +1,51 @@
+{
+    "input":  "data/Automatic-1.json",
+    "warmup_runs_each":  1,
+    "paired_runs":  8,
+    "env":  {
+                "GDCONTESTAI_THREADS":  "1",
+                "GDCONTESTAI_TIME_LIMIT_MS":  "1000",
+                "GDCONTESTAI_SEED":  "20260627"
+            },
+    "baseline":  {
+                     "runs":  8,
+                     "min_ms":  37804.375,
+                     "median_ms":  51049.398,
+                     "max_ms":  72924.406,
+                     "mean_ms":  52702.037,
+                     "std_ms":  9438.032
+                 },
+    "optimized":  {
+                      "runs":  8,
+                      "min_ms":  24295.651,
+                      "median_ms":  44795.585,
+                      "max_ms":  53059.471,
+                      "mean_ms":  43757.273,
+                      "std_ms":  8337.784
+                  },
+    "paired_mean_delta_ms":  8944.764,
+    "improvement_percent":  16.972,
+    "speedup_x":  1.2044,
+    "raw_samples":  {
+                        "baseline_ms":  [
+                                            47449.8697,
+                                            51053.3422,
+                                            50583.843,
+                                            51512.509000000005,
+                                            72924.4059,
+                                            51045.4548,
+                                            37804.375400000004,
+                                            59242.497500000005
+                                        ],
+                        "optimized_ms":  [
+                                             53059.4706,
+                                             41469.9187,
+                                             51253.2869,
+                                             46740.6812,
+                                             47986.1187,
+                                             24295.6513,
+                                             42402.569500000005,
+                                             42850.488300000005
+                                         ]
+                    }
+}

@@ -1,0 +1,43 @@
+{
+    "benchmark":  "lbvh-only-ab-medium",
+    "input":  "data/Automatic-5.json",
+    "warmup_runs_each":  1,
+    "paired_runs":  3,
+    "env":  {
+                "GDCONTESTAI_THREADS":  "1",
+                "GDCONTESTAI_TIME_LIMIT_MS":  "1000",
+                "GDCONTESTAI_SEED":  "20260627",
+                "GDCONTESTAI_NO_TIME_LIMIT":  "0"
+            },
+    "baseline":  {
+                     "runs":  3,
+                     "min_ms":  20487.5,
+                     "median_ms":  20712.019,
+                     "max_ms":  20712.019,
+                     "mean_ms":  20565.282,
+                     "std_ms":  103.821
+                 },
+    "optimized":  {
+                      "runs":  3,
+                      "min_ms":  20638.766,
+                      "median_ms":  21580.272,
+                      "max_ms":  21580.272,
+                      "mean_ms":  21061.835,
+                      "std_ms":  390.239
+                  },
+    "paired_mean_delta_ms":  -496.553,
+    "improvement_percent":  -2.415,
+    "speedup_x":  0.9764,
+    "raw_samples":  {
+                        "baseline_ms":  [
+                                            20487.5004,
+                                            20712.0191,
+                                            20496.326100000002
+                                        ],
+                        "optimized_ms":  [
+                                             21580.271500000003,
+                                             20966.468,
+                                             20638.765900000002
+                                         ]
+                    }
+}
